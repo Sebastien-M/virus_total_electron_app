@@ -1,0 +1,26 @@
+{
+    "name": "virus_total_checker",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc && webpack && electron ./src/electron/index.js",
+        "start": "npm run build && electron index.js",
+        "wp": "webpack",
+        "run_app": "electron ./src/electron/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^1.8.2",
+        "ts-loader": "^4.0.0",
+        "tslint": "^5.9.1",
+        "typescript": "^2.6.2",
+        "webpack": "^4.0.0",
+        "webpack-cli": "^2.0.8"
+    },
+    "dependencies": {
+        "asar": "^0.14.2"
+    }
+}
